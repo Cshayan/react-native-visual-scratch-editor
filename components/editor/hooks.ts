@@ -20,16 +20,10 @@ export const useEditorFunctionality = ({list}: IEditor) => {
     params: {
       animationListOne = [],
       animationListTwo = [],
-      spritID = 0,
       actionToExecute = 1,
+      spritID,
     } = {},
   } = useRoute<RouteProp<ParamList, 'Editor'>>();
-
-  const handleResetButtonPress = (): void => {
-    list.forEach((_, idx) =>
-      elementsRef?.current?.[idx]?.current?.resetXYCoordinates?.(),
-    );
-  };
 
   const handlePlayButtonPress = useCallback(() => {
     const animationList =
@@ -84,7 +78,6 @@ export const useEditorFunctionality = ({list}: IEditor) => {
     setX,
     setY,
     elementsRef,
-    handleResetButtonPress,
     handlePlayButtonPress,
   };
 };
