@@ -84,11 +84,6 @@ const ActionCreator = (): JSX.Element => {
           );
         }}
       />
-      {/* <CurrentActionList
-        isActionOneActive={isActionOneActive}
-        onActionOnePress={onActionOnePress}
-        onActionTwoPress={onActionTwoPress}
-      /> */}
       <TouchableOpacity style={styles.doneBtn} onPress={onDonePress}>
         <TextComp color="#fff" size={18} style={styles.textStyle}>
           DONE
@@ -101,6 +96,7 @@ const ActionCreator = (): JSX.Element => {
 export default ActionCreator;
 
 const styles = StyleSheet.create({
+<<<<<<< HEAD
   container: {
     flex: 1,
   },
@@ -109,6 +105,8 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     width: '100%',
   },
+=======
+>>>>>>> 7d4955bd8eafbfd55893edc5e53b783e41655e78
   row: {
     flexDirection: 'row',
     flex: 1,
@@ -121,6 +119,7 @@ const styles = StyleSheet.create({
   textStyle: {
     textAlign: 'center',
   },
+<<<<<<< HEAD
   itemsInZoneStyle: {
     width: 10,
   },
@@ -172,4 +171,6 @@ const styles = StyleSheet.create({
     minHeight: 130,
     marginVertical: 15,
   },
+=======
+>>>>>>> 7d4955bd8eafbfd55893edc5e53b783e41655e78
 });
